@@ -1,0 +1,22 @@
+{
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "manifest_version": 2,
+  "name": "extChromeManager",
+  "description": "Небольшое расширение для включения и отключения плагинов Chrome \"на лету\" а также создания профилей расширений",
+  "version": "0.01",
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://ssl.google-analytics.com; object-src 'self'",
+  "permissions": [
+    "storage",
+    "management"
+  ],
+  "icons": {
+    "16": "icons/main_16.png",
+    "48": "icons/main48.png",
+    "128": "icons/main_128.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/icon128px.png",
+    "default_popup": "settings.html"
+  },
+  "short_name": "extManager"
+}
